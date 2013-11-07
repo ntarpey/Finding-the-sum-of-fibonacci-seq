@@ -1,0 +1,13 @@
+def fib_sum_below(x):
+    beg = 0
+    scnd = 1
+    summation = 0 #running total
+    while True:
+        beg, scnd = scnd, beg + scnd # starts our running total at 3, which is 1+2, the first two digits in fib seq
+        if scnd >= x:
+            break #ends while loop at our desired top number
+        if scnd % 2 == 0:
+            summation += scnd
+    print(summation)
+
+print fib_sum_below(9)
